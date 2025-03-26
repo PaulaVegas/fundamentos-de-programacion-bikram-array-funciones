@@ -20,11 +20,7 @@ function separarPalabras(string) {
 }
 
 function repetirString(string, numero) {
-  let stringSuma = "";
-  for (let i = 0; i < numero; i++) {
-    stringSuma += string;
-  }
-  return stringSuma;
+  return arrayRepe = string.repeat(numero)
 }
 
 function esPrimo(numero) {
@@ -37,35 +33,40 @@ function esPrimo(numero) {
 }
 
 function ordenarArray(array) {
-  return array.sort(function (a, b) {
-    return a - b;
-  });
+  return array.reverse()
 }
+
+// function ordenarArray(array) {
+//   return array.sort(function (a, b) {
+//     return a - b;
+//   });
+// }
+
 
 function obtenerPares(array) {
   return array.filter((number) => number % 2 === 0);
 }
 
-/*No entiendo bien */
-function pintarArray(array) {
-  let arrayPintado = array[0].toString();
+// /*No entiendo bien */
+// function pintarArray(array) {
+//   let arrayPintado = array[0].toString();
 
-  for (let i = 1; i < array.length; i++) {
-    arrayPintado += ", " + array[i].toString();
-  }
-  return "[" + arrayPintado + "]";
-}
+//   for (let i = 1; i < array.length; i++) {
+//     arrayPintado += ", " + array[i].toString();
+//   }
+//   return "[" + arrayPintado + "]";
+// }
 
-pintarArray([0, 1, 2]);
+// pintarArray([0, 1, 2]);
 
-/*No entiendo bien */
-function arrayMapi(array, funcion) {
-    let arrayFuncion = [];
-    for (let i = 0; i < array.length; i++) {
-        arrayFuncion[i] = funcion(array[i]);
-    }
-    return arrayFuncion;
-}
+// /*No entiendo bien */
+// function arrayMapi(array, funcion) {
+//     let arrayFuncion = [];
+//     for (let i = 0; i < array.length; i++) {
+//         arrayFuncion[i] = funcion(array[i]);
+//     }
+//     return arrayFuncion;
+// }
 
 function eliminarDuplicados(array) {
     let arrayNuevo= [];
@@ -78,7 +79,7 @@ function eliminarDuplicados(array) {
   }
 
 
-//PROYECTO
+// //PROYECTO
 const arrayNumerosNeg = [0, -1, -2, -3, -4, -5, -6, -7, -8, -9];
 const holaMundo = ["Hola", "Mundo"];
 const loGuardoTodo = ["hola", "que", 23, 42.33, "tal"];
